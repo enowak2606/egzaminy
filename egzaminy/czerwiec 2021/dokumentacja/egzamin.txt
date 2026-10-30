@@ -1,0 +1,6 @@
+System operacyjny: Windows 11
+Środowiska programistyczne:
+	-Intellij Idea
+	-Android Studio
+Nazwy języków programowania: Java
+Emulowane urządzenie: Pixel 10a

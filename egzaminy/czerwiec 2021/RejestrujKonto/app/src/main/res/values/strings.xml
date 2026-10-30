@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RejestrujKonto</string>
+    <string name="rejestruj_konto">Rejestruj konto</string>
+    <string name="podaj_e_mail">Podaj e-mail</string>
+    <string name="email">email</string>
+    <string name="podaj_has_o">Podaj hasło</string>
+    <string name="powt_rz_has_o">Powtórz hasło</string>
+    <string name="zatwierd">ZATWIERDŹ</string>
+    <string name="autor">Autor: 00000000000</string>
+</resources>

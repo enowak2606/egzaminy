@@ -1,0 +1,72 @@
+﻿<Window x:Class="pracownik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pracownik"
+        Background="LightSteelBlue"
+        mc:Ignorable="d"
+        Title="Dodaj pracownika  0000000000" Height="550" Width="900">
+    <StackPanel Orientation="Vertical">
+
+    <StackPanel Orientation="Horizontal">
+
+        <GroupBox Width="350" Height="300" Margin="50" Header="Dane pracownika" FontSize="20" >
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="210"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+
+                <Label Content="Imię:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+                <TextBox x:Name="ImieTextBox" Grid.Row="0" Grid.Column="1" Margin="5" Width="150"/>
+
+                <Label Content="Nazwisko:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+                <TextBox x:Name="NazwiskoTextBox" Grid.Row="1" Grid.Column="1" Margin="5" Width="150"/>
+
+                <Label Content="Stanowisko:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+                <ComboBox x:Name="StanowiskoComboBox" Grid.Row="2" Grid.Column="1" Margin="5" Width="150">
+                    <ComboBoxItem Content="Kierownik"/>
+                    <ComboBoxItem Content="Starszy programista"/>
+                    <ComboBoxItem Content="Młodszy programista"/>
+                    <ComboBoxItem Content="Tester"/>
+                </ComboBox>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Width="350" Height="300" Margin="50" Header="Generowanie hasła" FontSize="20" >
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="210"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Ile znaków?" Grid.Row="0" Grid.Column="0" Margin="5"/>
+                <TextBox x:Name="ZnakiTextBox" Grid.Row="0" Grid.Column="1" Margin="5" Width="150"/>
+                <CheckBox x:Name="MaleIWielkieLiteryCheckBox" Content="Małe i wielkie litery" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="15"/>
+                <CheckBox x:Name="CyfryCheckBox" Content="Cyfry" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="15"/>
+                <CheckBox x:Name="ZnakiSpecjalneCheckBox" Content=" Znaki specjalne" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="15"/>
+
+                <Button x:Name="GenerujHasloButton" Click="GenerujHasloButton_Click" Content="Generuj hasło" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Width="200" Background="SteelBlue" Foreground="White"/>
+            </Grid>
+        </GroupBox>
+
+
+
+    </StackPanel>
+        <Button x:Name="ZatwierdzButton" Click="ZatwierdzButton_Click" Content="Zatwierdź" Width="400" Height="50" Margin="10" Background="SteelBlue" Foreground="White" FontSize="30"/>
+    </StackPanel>
+</Window>

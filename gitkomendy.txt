@@ -1,0 +1,13 @@
+Dzialanie komand git:
+cd C:/Users/Praktyki/IdeaProjects/szyfr3
+zmienia aktualny folder na folder projektu
+
+git init
+inicjalizuje nowe puste repozytorium w biezacym folderze
+
+git add . 
+wybiera wszystkie edytowane pliki z biezacego folderu 
+
+git commit -m "konsolowa"
+tworzy "commit", czyli trwaly zapis plikow w repozytorium, dodawajac
+napisana w cudzyslowie wiadomosc, ktora opisuje wprowadzone zmiany

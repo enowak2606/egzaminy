@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/domek_w_g_rach"
+        android:textSize="40sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="289dp"
+        android:contentDescription="@string/domek_w_g_rach"
+        android:src="@drawable/domek" />
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/polub"
+            android:backgroundTint="@color/teal"
+            android:textColor="@color/white"
+            android:id="@+id/polubButton" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usu"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal"
+            android:id="@+id/usunButton" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zapisz"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal"
+            android:id="@+id/zapiszButton"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_polubie"
+        android:id="@+id/polubieniaTextView"
+        android:textSize="15sp"
+        android:layout_gravity="end"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opis"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:textFontWeight="1000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/opisTresc"/>
+
+</LinearLayout>
